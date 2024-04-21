@@ -16,7 +16,7 @@ jobs:
       matrix:
         package:
           - local_path: 'client'
-            split_repository: 'openapi-client-generator.base'
+            split_repository: 'openapi-client.base'
           - local_path: 'generator'
             split_repository: 'openapi-client-generator'
     steps:
