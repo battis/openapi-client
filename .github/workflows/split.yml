@@ -15,10 +15,10 @@ jobs:
       fail-fast: false
       matrix:
         package:
-          - local_path: 'client'
+          - local_path: 'base'
             split_repository: 'openapi-client.base'
           - local_path: 'generator'
-            split_repository: 'openapi-client-generator'
+            split_repository: 'openapi-client.generator'
     steps:
       - uses: actions/checkout@v2
       # no tag
