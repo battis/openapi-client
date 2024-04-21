@@ -70,7 +70,7 @@ class Client
                     );
                 } else {
                     $token = $this->api->getAccessToken(self::AUTHORIZATION_CODE, [
-                      self::CODE => $_GET[self::CODE],
+                        self::CODE => $_GET[self::CODE],
                     ]);
                     $this->storage->setToken($token);
                 }
@@ -80,7 +80,7 @@ class Client
         } elseif ($token->hasExpired()) {
             // use refresh token to get new Bb access token
             $newToken = $this->api->getAccessToken(self::REFRESH_TOKEN, [
-              self::REFRESH_TOKEN => $token->getRefreshToken(),
+                self::REFRESH_TOKEN => $token->getRefreshToken(),
             ]);
             // FIXME need to handle _not_ being able to refresh!
             $this->storage->setToken($newToken);
