@@ -1,6 +1,6 @@
 {
   "require": {
-    "battis/openapi-client-generator": "^0.2",
+    "battis/openapi-client.generator": "^0.2",
     "php-di/php-di": "^7.0"
   },
   "autoload": {
