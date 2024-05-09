@@ -1,47 +1,49 @@
 {
-  "name": "battis/openapi-client-generator",
-  "description": "Generate a PHP client for a RESTful API from its OpenAPI description file",
-  "license": "GPL-3.0",
-  "authors": [
-    {
-      "name": "Seth Battis",
-      "email": "seth@battis.net"
-    }
-  ],
-  "require": {
-    "battis/data-utilities": "^1.2",
-    "battis/php-generator": "@dev",
-    "cebe/php-openapi": "^1.7",
-    "friendsofphp/php-cs-fixer": "^3.49",
-    "league/html-to-markdown": "^5.1",
-    "league/oauth2-client": "^2.7",
-    "monolog/monolog": "^3.5",
-    "pahanini/monolog-cli-formatter": "^2.0",
-    "php-di/php-di": "^7.0",
-    "psr/log": "^3.0",
-    "psr/simple-cache": "^3.0",
-    "sspat/reserved-words": "^3.0"
-  },
-  "require-dev": {
-    "symplify/monorepo-builder": "^11.2"
-  },
-  "autoload": {
-    "psr-4": {
-      "Battis\\OpenAPI\\": [
-        "packages/client/src",
-        "packages/generator/src"
-      ],
-      "Battis\\OpenAPI\\Client\\": "packages/base/src",
-      "Example\\": "examples/php-di/src"
-    }
-  },
-  "config": {
-    "sort-packages": true
-  },
-  "replace": {
-    "battis/openapi-client-generator": "self.version",
-    "battis/openapi-client-generator.base": "self.version",
-    "battis/openapi-client.base": "self.version",
-    "battis/openapi-client.generator": "self.version"
-  }
+    "name": "battis/openapi-client-generator",
+    "description": "Generate a PHP client for a RESTful API from its OpenAPI description file",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Seth Battis",
+            "email": "seth@battis.net"
+        }
+    ],
+    "require": {
+        "battis/data-utilities": "^1.2",
+        "battis/php-generator": "@dev",
+        "cebe/php-openapi": "^1.7",
+        "friendsofphp/php-cs-fixer": "^3.49",
+        "league/html-to-markdown": "^5.1",
+        "league/oauth2-client": "^2.7",
+        "monolog/monolog": "^3.5",
+        "pahanini/monolog-cli-formatter": "^2.0",
+        "php-di/php-di": "^7.0",
+        "psr/log": "^3.0",
+        "psr/simple-cache": "^3.0",
+        "sspat/reserved-words": "^3.0"
+    },
+    "require-dev": {
+        "symplify/monorepo-builder": "^11.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Battis\\OpenAPI\\": [
+                "packages/client/src",
+                "packages/generator/src"
+            ],
+            "Battis\\OpenAPI\\Client\\": "packages/base/src",
+            "Example\\": "examples/php-di/src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "replace": {
+        "battis/openapi-client-generator": "self.version",
+        "battis/openapi-client-generator.base": "self.version",
+        "battis/openapi-client.base": "self.version",
+        "battis/openapi-client.generator": "self.version"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
