@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b83cd91dcc0a3b6a433efb2e6a601c26",
+    "content-hash": "8106df064ebb20fd4ba23f50c80e22ce",
     "packages": [
         {
             "name": "battis/data-utilities",
@@ -91,16 +91,16 @@
         },
         {
             "name": "battis/php-generator",
-            "version": "v0.2",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/battis/php-generator.git",
-                "reference": "bf00942847d04c6361207cad8d2b808868143a94"
+                "reference": "afe78dda5b05860493b0e682432995fc953fb7f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/battis/php-generator/zipball/bf00942847d04c6361207cad8d2b808868143a94",
-                "reference": "bf00942847d04c6361207cad8d2b808868143a94",
+                "url": "https://api.github.com/repos/battis/php-generator/zipball/afe78dda5b05860493b0e682432995fc953fb7f6",
+                "reference": "afe78dda5b05860493b0e682432995fc953fb7f6",
                 "shasum": ""
             },
             "require": {
@@ -109,6 +109,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^11.0"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -128,9 +129,9 @@
             "description": "Generate PHP code dynamically",
             "support": {
                 "issues": "https://github.com/battis/php-generator/issues",
-                "source": "https://github.com/battis/php-generator/tree/v0.2"
+                "source": "https://github.com/battis/php-generator/tree/main"
             },
-            "time": "2024-04-20T14:54:43+00:00"
+            "time": "2024-04-25T18:23:08+00:00"
         },
         {
             "name": "cebe/php-openapi",
@@ -3530,7 +3531,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "battis/php-generator": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
