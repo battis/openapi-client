@@ -95,12 +95,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/battis/php-generator.git",
-                "reference": "301dac2d771c43060cfac8ef71e72351165ccc29"
+                "reference": "052e6846b3e79e72fd6cdea890e7c008f428041e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/battis/php-generator/zipball/301dac2d771c43060cfac8ef71e72351165ccc29",
-                "reference": "301dac2d771c43060cfac8ef71e72351165ccc29",
+                "url": "https://api.github.com/repos/battis/php-generator/zipball/052e6846b3e79e72fd6cdea890e7c008f428041e",
+                "reference": "052e6846b3e79e72fd6cdea890e7c008f428041e",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,7 @@
                 "issues": "https://github.com/battis/php-generator/issues",
                 "source": "https://github.com/battis/php-generator/tree/main"
             },
-            "time": "2024-05-09T19:56:52+00:00"
+            "time": "2024-05-10T14:05:28+00:00"
         },
         {
             "name": "cebe/php-openapi",
