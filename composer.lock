@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd749d504fa0c463629ea96cebc0aaf0",
+    "content-hash": "b83cd91dcc0a3b6a433efb2e6a601c26",
     "packages": [
         {
             "name": "battis/data-utilities",
@@ -91,7 +91,7 @@
         },
         {
             "name": "battis/php-generator",
-            "version": "dev-main",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/battis/php-generator.git",
@@ -109,7 +109,6 @@
             "require-dev": {
                 "phpunit/phpunit": "^11.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -129,7 +128,7 @@
             "description": "Generate PHP code dynamically",
             "support": {
                 "issues": "https://github.com/battis/php-generator/issues",
-                "source": "https://github.com/battis/php-generator/tree/main"
+                "source": "https://github.com/battis/php-generator/tree/v0.2.1"
             },
             "time": "2024-05-10T14:05:28+00:00"
         },
@@ -3530,11 +3529,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "battis/php-generator": 20
-    },
-    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
