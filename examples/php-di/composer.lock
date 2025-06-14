@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b83cd91dcc0a3b6a433efb2e6a601c26",
+    "content-hash": "3a8df359e5beedba5701fb7e3be91195",
     "packages": [
         {
             "name": "battis/data-utilities",
@@ -88,6 +88,100 @@
                 "source": "https://github.com/battis/hydratable/tree/v0.1.1"
             },
             "time": "2023-07-04T21:21:58+00:00"
+        },
+        {
+            "name": "battis/openapi-client.base",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/battis/openapi-client.base.git",
+                "reference": "b53fb6b3b14bd7750c1bfad5ee8c2ab76d3c988a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/battis/openapi-client.base/zipball/b53fb6b3b14bd7750c1bfad5ee8c2ab76d3c988a",
+                "reference": "b53fb6b3b14bd7750c1bfad5ee8c2ab76d3c988a",
+                "shasum": ""
+            },
+            "require": {
+                "league/oauth2-client": "^2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Battis\\OpenAPI\\Client\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Seth Battis",
+                    "email": "seth@battis.net"
+                }
+            ],
+            "description": "Base for a PHP client for a RESTful API from its OpenAPI description file",
+            "support": {
+                "issues": "https://github.com/battis/openapi-client.base/issues",
+                "source": "https://github.com/battis/openapi-client.base/tree/v0.1"
+            },
+            "time": "2024-05-12T00:24:34+00:00"
+        },
+        {
+            "name": "battis/openapi-client.generator",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/battis/openapi-client.generator.git",
+                "reference": "2db0db5cf69671ec2e54cefb42378ef1e242a0ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/battis/openapi-client.generator/zipball/2db0db5cf69671ec2e54cefb42378ef1e242a0ea",
+                "reference": "2db0db5cf69671ec2e54cefb42378ef1e242a0ea",
+                "shasum": ""
+            },
+            "require": {
+                "battis/data-utilities": "^1.2",
+                "battis/openapi-client.base": "^0.1",
+                "battis/php-generator": "^0.2",
+                "cebe/php-openapi": "^1.7",
+                "friendsofphp/php-cs-fixer": "^3.49",
+                "league/html-to-markdown": "^5.1",
+                "league/oauth2-client": "^2.7",
+                "monolog/monolog": "^3.5",
+                "pahanini/monolog-cli-formatter": "^2.0",
+                "psr/log": "^3.0",
+                "psr/simple-cache": "^3.0",
+                "sspat/reserved-words": "^3.0"
+            },
+            "suggest": {
+                "php-di/php-di": "Easier configuration and extension using dependency injection"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Battis\\OpenAPI\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Seth Battis",
+                    "email": "seth@battis.net"
+                }
+            ],
+            "description": "Generate a PHP client for a RESTful API from its OpenAPI description file",
+            "support": {
+                "issues": "https://github.com/battis/openapi-client.generator/issues",
+                "source": "https://github.com/battis/openapi-client.generator/tree/v0.1"
+            },
+            "time": "2024-05-12T00:24:31+00:00"
         },
         {
             "name": "battis/php-generator",
@@ -4081,60 +4175,7 @@
             "time": "2025-04-04T10:10:33+00:00"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "symplify/monorepo-builder",
-            "version": "11.2.22",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symplify/monorepo-builder.git",
-                "reference": "c913a8524ee276c8c21a09012c137f6913b5dcad"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symplify/monorepo-builder/zipball/c913a8524ee276c8c21a09012c137f6913b5dcad",
-                "reference": "c913a8524ee276c8c21a09012c137f6913b5dcad",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2"
-            },
-            "bin": [
-                "bin/monorepo-builder"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "10.3-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Prefixed version of Not only Composer tools to build a Monorepo.",
-            "support": {
-                "issues": "https://github.com/symplify/monorepo-builder/issues",
-                "source": "https://github.com/symplify/monorepo-builder/tree/11.2.22"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/rectorphp",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/tomasvotruba",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-08-23T03:19:18+00:00"
-        }
-    ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {},
