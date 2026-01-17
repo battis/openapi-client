@@ -1,0 +1,6 @@
+[submodule "packages/base"]
+	path = packages/base
+	url = git@github.com:battis/openapi-client.base.git
+[submodule "packages/generator"]
+	path = packages/generator
+	url = git@github.com:battis/openapi-client.generator.git
